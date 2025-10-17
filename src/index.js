@@ -32,29 +32,31 @@ submitInput.addEventListener("click", async () => {
 			link: data.link,
 			long: data.long_url,
 		});
-		arrayLinks.forEach(link => {
+		arrayLinks.forEach((link) => {
 			//display that current array in html/css
 			let listItem = document.createElement("li");
-			//add a button, that button needs to copy short link 
+			//add a button, that button needs to copy short link
 			listItem.innerHTML = `<li>${link.long} ${link.link}</li>`;
+			//create copy button
 			const button = document.createElement("button");
+			button.textContent = "copy";
+			listItem.appendChild(button);
+			listLinksUL.appendChild(listItem);
+
+			//when user taps copy
 			button.addEventListener("click", () => {
 				//copy the short url link to clipboard
-			
-			})
-			button.textContent = "copy";
-			listItem.appendChild(button)
-			listLinksUL.appendChild(listItem);
-		})
-
+				navigator.clipboard.writeText(link.link);
+				console.log(link.link + " this is the new update");
+				button.textContent = "done!";
+			});
+		});
 	} catch (error) {
 		console.error(error);
 	}
 });
-			
+
 //how to use copy to clip board search it up
-// be able to copy the short link to the clip board when you click copy button 
+// be able to copy the short link to the clip board when you click copy button
 
 //save to local storage using dom
-
-
