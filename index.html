@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- displays site properly based on user's device -->
 		<link rel="stylesheet" href="style.css" />
-    <script src="./src/index.js" defer></script>
+		<script src="./src/index.js" defer></script>
 
 		<link
 			rel="icon"
@@ -18,22 +18,58 @@
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	</head>
 	<body>
-		<h1>Shorten your link Here</h1>
-		<div id="inputURL">
-			<label for="text">Insert your long URL HERE</label>
-			<input type="text" id="usertextURL" />
-      <button id = "submit">submit</button>
+		<nav>
+			<ul>
+				<li><a href=" ">Home</a></li>
+				<li><a href=""></a> Generate</li>
+				<li><a href=" ">footer</a></li>
+				<li><a href=" ">tap link</a></li>
+			</ul>
+		</nav>
+		<div class="hero-image">
+			<div class="hero-text">
+				<h1>More than Just Shorter Links</h1>
+				<p id="hero-p">
+					Build your brand's recognition and detailed insights on how your links
+					are performing
+				</p>
+				<button id="hero-button">Get Started</button>
+			</div>
+
+			<aside>
+				<img
+					src="/url-shortening-api-master/images/illustration-working.svg"
+					alt="a person typing at their desktop" />
+			</aside>
+		</div>
+
+		<div class="input-background">
+			<div id="inputURL">
+				<label for="text"></label>
+				<input
+					type="text"
+					id="usertextURL"
+					placeholder="Shorten a link here..." />
+				<button id="submit">submit</button>
+			</div>
 		</div>
 
 		<section id="section">
-			<ul id="section-list">List of links created</ul>
+			<ul id="section-list">
+				List of links created
+			</ul>
 		</section>
 
 		<div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
 				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
+			>. Coded by
+			<a
+				href="https://github.com/AngelicaGFlores/project-shortenURL"
+				target="_blank"
+				>Angelica G Flores</a
+			>.
 		</div>
 	</body>
 </html>
