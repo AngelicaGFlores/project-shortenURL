@@ -16,7 +16,7 @@ submitInput.addEventListener("click", async () => {
 		const response = await fetch("https://api-ssl.bitly.com/v4/shorten", {
 			method: "POST",
 			headers: {
-				Authorization: `Bearer fd9537a0c24778cd5f49c5e29508a21a39966f51`,
+				Authorization: `Bearer 7a0a8b22221d9a4b13cc8b8d0fbc741db2b6387f`,
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify({
@@ -32,21 +32,26 @@ submitInput.addEventListener("click", async () => {
 			link: data.link,
 			long: data.long_url,
 		});
+
+		// console.log(arrayLinks);
+		while (listLinksUL.firstElementChild) {
+			listLinksUL.firstElementChild.remove();
+		}
+		
 		arrayLinks.forEach((link) => {
 			//display that current array in html/css
 			let listItem = document.createElement("li");
 			//add a button, that button needs to copy short link
-			listItem.innerHTML = `<li id="new-list">
+			listItem.innerHTML = `
 			<span id="span-one">${link.long}</span>
 			<span id="span-two">${link.link}</span>
-			</li>
 			`;
+			listItem.id = "new-list";
 			//create copy button
 
 			const button = document.createElement("button");
 			button.textContent = "copy";
-			listItem.appendChild(button);
-			listLinksUL.appendChild(listItem);
+		
 
 			//when user taps copy
 
@@ -55,7 +60,10 @@ submitInput.addEventListener("click", async () => {
 				navigator.clipboard.writeText(link.link);
 				console.log(link.link + " this is the new update");
 				button.textContent = "Copied!";
+			
 			});
+				listItem.appendChild(button);
+				listLinksUL.appendChild(listItem);
 		});
 	} catch (error) {
 		console.error(error);
