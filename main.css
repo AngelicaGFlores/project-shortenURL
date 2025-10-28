@@ -1,10 +1,9 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    margin-left:10px;
-
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 /* 
 nav > i {
@@ -13,37 +12,55 @@ nav > i {
 
 li {
 	display: flex;
-    flex-direction: row;
+	flex-direction: row;
 	margin-left: 0%;
 	margin-right: 0px;
- 
-
-    
 }
 
 Span {
 	font-size: xx-large;
 	font-weight: bolder;
-    margin-left: 4px;
-    margin-left: 0%;
+	margin-left: 4px;
+	margin-left: 0%;
 }
 
 i.fa-solid.fa-bars {
 	display: none;
 }
 
+.show {
+    display: block;
+    background-color: red;
 
-@media screen and ( max-width:375px ) {
-    nav > ul {
-        display: none;
-    }
-    i {
-        margin-left: auto;
-        margin-top: 20px;
-        /* //align-self: flex-end; */
-    }
+}
 
+#drop-down {
+    display: none;
+}
+@media screen and (max-width: 375px) {
+	div#First-nav {
+		display: none;
+	}
+	i.fa-solid.fa-bars {
+		margin-left: auto;
+		margin-top: 20px;
+		display: block;
+		position: absolute;
+		right: 5px;
+	}
+	nav {
+		/* background-color: red; */
+		width: 100%;
+	}
 
-   
+	div#Second-nav {
+		display: none;
+	}
 
+	aside > img {
+		width: 200px;
+	}
+     div.hero-text > h1 {
+        font-size: 22px;
+     }
 }

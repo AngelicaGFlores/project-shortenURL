@@ -9,7 +9,7 @@ const listLinksUL = document.getElementById(`section-list`);
 const dropDown = document.querySelector('i');
 
 dropDown.addEventListener('click', function () {
-	document.querySelector('nav>ul').classList.toggle('show')
+	document.querySelector("#drop-down").classList.toggle("show");
 })
 
 //array of links
