@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left:10px;
+
+}
+/* 
+nav > i {
+    display: none;
+} */
+
+li {
+	display: flex;
+    flex-direction: row;
+	margin-left: 0%;
+	margin-right: 0px;
+ 
+
+    
+}
+
+Span {
+	font-size: xx-large;
+	font-weight: bolder;
+    margin-left: 4px;
+    margin-left: 0%;
+}
+
+i.fa-solid.fa-bars {
+	display: none;
+}
+
+
+@media screen and ( max-width:375px ) {
+    nav > ul {
+        display: none;
+    }
+    i {
+        margin-left: auto;
+        margin-top: 20px;
+        /* //align-self: flex-end; */
+    }
+
+
+   
+
+}

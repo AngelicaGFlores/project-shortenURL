@@ -4,6 +4,14 @@
 const longURLinput = document.getElementById(`usertextURL`);
 const submitInput = document.getElementById(`submit`);
 const listLinksUL = document.getElementById(`section-list`);
+
+//query itag
+const dropDown = document.querySelector('i');
+
+dropDown.addEventListener('click', function () {
+	document.querySelector('nav>ul').classList.toggle('show')
+})
+
 //array of links
 const arrayLinks = [];
 
