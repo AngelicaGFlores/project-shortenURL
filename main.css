@@ -94,3 +94,6 @@ picture>button {
 margin: auto;
 }
 
+aside > img {
+	background-image: url(./images/illustration-working.svg);
+}
