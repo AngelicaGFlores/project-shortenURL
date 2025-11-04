@@ -29,13 +29,12 @@ i.fa-solid.fa-bars {
 }
 
 .show {
-    display: block;
-    background-color: red;
-
+	display: block;
+	background-color: red;
 }
 
 #drop-down {
-    display: none;
+	display: none;
 }
 @media screen and (max-width: 375px) {
 	div#First-nav {
@@ -60,7 +59,34 @@ i.fa-solid.fa-bars {
 	aside > img {
 		width: 200px;
 	}
-     div.hero-text > h1 {
-        font-size: 22px;
-     }
+	div.hero-text > h1 {
+		font-size: 22px;
+	}
+
+}
+
+img.img-fluid.img-thumbnail {
+	background-color: #392F52;
+}
+
+footer {
+	height: 200px;
+	width: 97%;
+	background-color: #232027;
+}
+
+picture {
+	display: flex;
+	flex-wrap: wrap;
+	background-image: url(./images/bg-shorten-desktop.svg);
+	height: 200px;
+	background-repeat: no-repeat;
+	background-color:#392F52;
+	flex-direction: column;
+	text-align: center;
+	color: aliceblue;
+}
+
+picture>button {
+margin: auto;
 }
