@@ -70,9 +70,11 @@ img.img-fluid.img-thumbnail {
 }
 
 footer {
+	color: aliceblue;
 	height: 200px;
 	width: 97%;
 	background-color: #232027;
+	padding-top: 50px;
 }
 
 picture {
