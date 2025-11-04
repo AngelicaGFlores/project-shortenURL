@@ -71,8 +71,8 @@ img.img-fluid.img-thumbnail {
 
 footer {
 	color: aliceblue;
-	height: 200px;
-	width: 97%;
+	height: 400px;
+	width: 100%;
 	background-color: #232027;
 	padding-top: 50px;
 }
@@ -81,6 +81,7 @@ picture {
 	display: flex;
 	flex-wrap: wrap;
 	background-image: url(./images/bg-shorten-desktop.svg);
+	width: 100%;
 	height: 200px;
 	background-repeat: no-repeat;
 	background-color:#392F52;
@@ -92,3 +93,4 @@ picture {
 picture>button {
 margin: auto;
 }
+
